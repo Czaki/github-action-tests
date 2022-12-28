@@ -7,6 +7,6 @@ jobs:
     strategy:
       matrix:
         test_text: ["test1", "test2"]
-    uses: ./.github/workflows/resusable_workflow.yml
+    uses: ./.github/workflows/reusable_workflow.yml
     with:
       text: ${{ matrix.test_text }}
