@@ -1,0 +1,12 @@
+on:
+  push
+
+
+jobs:
+  test_run:
+    strategy:
+      matrix:
+        test_text: ["test1", "test2"]
+    uses: ./.github/workflows/resusable_workflow.yml
+    with:
+      text: ${{ matrix.test_text }}
