@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print info
-        run: echo "Print info"
+        run: echo "Print info all"
           
 
   push_run:
@@ -21,11 +21,11 @@ jobs:
     if: github.event_name == 'push'
     steps:
       - name: Print info
-        run: echo "Print info"
+        run: echo "Print info push"
 
   pull_run:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:
       - name: Print info
-        run: echo "Print info"
+        run: echo "Print info pull"
